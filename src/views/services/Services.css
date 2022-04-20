@@ -1,0 +1,42 @@
+.Services {
+    background-color: blue;
+}
+
+.Services .services_folder{
+    width: 100%;
+    min-height: 200px;
+}
+.Services .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.Services .txt {
+    text-align: center;
+    font-size: 1.8rem;
+    width: 70%;
+    margin: auto;
+}
+
+.Services .cardsLinks{
+    display: flex;
+    justify-content: center;
+}
+
+.Services .carLinksItem{
+    margin: 10px;
+    max-width: 500px;
+    max-height: 650px;
+    font-size: 2rem;
+}
+.Services .carLinksItem2{
+    background-color: antiquewhite;
+    flex-grow: 1;
+    max-width: 490px;
+    max-height: 650px;
+}
+
+.Services .card-image{
+    max-width: 500px;
+    max-height: 650px;
+}

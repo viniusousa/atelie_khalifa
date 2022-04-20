@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Spirax&display=swap');
+
+
+
+.Menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #FBD19B;
+}
+
+.Menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+
+}
+
+.Menu .logo {
+   padding: 10px;
+   background-color: purple;
+    font-size: 3rem;
+    font-family: 'Spirax', cursive;
+}

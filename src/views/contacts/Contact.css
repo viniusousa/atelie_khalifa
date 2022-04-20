@@ -1,0 +1,38 @@
+.Contact {
+    font-size: 1.5rem;
+}
+
+.Contact .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.Contact .contact_folder {
+    width: 100%;
+    min-height: 200px;
+}
+
+.Contact .cards_contact{
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+   margin: 50px;
+    
+}
+.Contact  .contactItem{
+    padding: 5px;
+    justify-content: center;
+    flex-grow: 1;
+}
+.Contact  .contactItemGrow{
+    text-align: center;
+    padding: 5px;
+    justify-content: center;
+    flex-grow: 2;
+
+}
+
+.Contact .mapa_temp {
+    width: 400px;
+    max-height: 600px;
+}

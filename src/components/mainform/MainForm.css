@@ -1,0 +1,23 @@
+.MainForm {
+    max-width: 400px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.MainForm .Input {
+    width: 380px;
+    font-size: 1.2rem;
+    margin: 10px 0px 20px ; 
+}
+.MainForm .Input2 {
+    height: 40px;
+}
+
+.MainForm .button {
+    background-color: #F8B662;
+    font-size: 1.5rem;
+    width: 150px;
+}
+.MainForm .buttonArea {
+    text-align: center;
+}
