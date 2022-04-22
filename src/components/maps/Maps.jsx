@@ -1,28 +1,41 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader  } from '@react-google-maps/api'
+import './Maps.css'
 
-export default function Maps() {
+const containerStyle = {
+    width: '100%',
+    height: '100%'
+}
+
+
+
+ function Maps() {
+    
+
+    const apiMaps = process.env.REACT_APP_GOOGLE_MAPS_API_KEY
+
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyC5zZvUjtXLUPe7CA0JTnW32iZSoBrxo1s"
-      })
-
-      //const [map, setMap] = useState(null)
+        googleMapsApiKey: apiMaps
+    })
 
     return(
         <div className='Mapa'>
-                {isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={{maxWidth: '100px0', maxHeight: '100px'}}
-            center={{
-                lat: -9.651072, 
-                lng: -35.719004
+            {isLoaded ? (
+                    <GoogleMap
+                        mapContainerStyle={containerStyle}
+                        center={{
+                            lat: -9.64900452248988,
+                            lng: -35.717256506194815
+                        }}
+                        zoom={15}
 
-            }}
-            zoom={15}
-        
-            ></GoogleMap>
-            ) : <></>}
+                    >                      
+                    </GoogleMap>
+                ) : <><p>Error no maps</p></>
+            }
         </div>
     )
-};
+}
+
+export default Maps
