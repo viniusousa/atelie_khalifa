@@ -10,7 +10,7 @@ import Maps from '../../components/maps/Maps'
 
 export default function Contact() {
     return(
-        <div>
+        <>
             <main className='Contact'>
                 <section>
                     <img src={contact_folder} className='contact_folder' alt="" />
@@ -25,7 +25,7 @@ export default function Contact() {
                             Rua Inexistente 123-A<br/>
                             Paraíso - Maceió - AL
                         </span>
-                        <div>
+                        <div className='mapa'>
                             <Maps/>
                         </div>
                     </div>
@@ -35,6 +35,6 @@ export default function Contact() {
                 </section>
             </main>
                 <Footer/>
-        </div>
+        </>
     )
 };

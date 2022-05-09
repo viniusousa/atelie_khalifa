@@ -27,16 +27,16 @@ export default function FormFooter() {
     }
 
     return(
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='FormFooter'>
             <div>
                 <div>
-                    <input type="text" placeholder='Digite seu nome...' value={nome} onChange={(e) => setNome(e.target.value)}/>
+                    <input type="text" placeholder='Digite seu nome...' value={nome} onChange={(e) => setNome(e.target.value)} required/>
                 </div>
                 <div>
-                    <input type="email" placeholder='Digite seu e-mail...' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <input type="email" placeholder='Digite seu e-mail...' value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 </div>
                 <div>
-                    <button type='submit'>QUERO RECEBER</button>   
+                    <button className='button' type='submit'>QUERO RECEBER</button>   
                 </div>
             </div>
         </form>

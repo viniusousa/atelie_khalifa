@@ -2,34 +2,31 @@
 
 .Footer {
     background-color: #FBD19B;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     width: 100%;
     font-size: 1.2rem;
+    flex-wrap: wrap;
 }
 
 .Footer .titulo{
     font-family: 'Spirax', cursive;
-    font-size: 1.5rem;
-    padding-bottom: 12px;
+    font-size: 1.8rem;
 
 }
 
 .Footer .Item-footer {
-    background-color: rgb(98, 165, 98);
+    padding: 30px;
     text-align: center;
+    flex-grow: 1;
 }
 
-@media (max-width: 700px) {
-    .Footer {
-        display: grid;
-        grid-template-columns:  2fr 1fr;
-        
-    }
-    .Item-footer:last-child{
-        background-color: aqua;
-        grid-template-columns: 1/3;
-    }
+.Footer a{
+    text-decoration: none;
+    color: black;
     
+}
+
+.Footer abbr{
+    text-decoration: none;
 }
 

@@ -1,5 +1,6 @@
 .Services {
     background-color: blue;
+    margin-bottom: 70px;
 }
 
 .Services .services_folder{
@@ -11,6 +12,7 @@
     font-size: 1.5rem;
 }
 
+
 .Services .txt {
     text-align: center;
     font-size: 1.8rem;
@@ -18,25 +20,38 @@
     margin: auto;
 }
 
+@media (max-width: 700px) {
+    .Services .titulo{
+        font-size: 1.2rem;
+    }
+    .Services .txt {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 400px) {
+    .Services .titulo{
+        font-size: 1.1rem;
+    }
+    .Services .txt {
+        font-size: 1.2rem;
+    }
+}
+
+
 .Services .cardsLinks{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: red;
 }
 
 .Services .carLinksItem{
     margin: 10px;
-    max-width: 500px;
-    max-height: 650px;
     font-size: 2rem;
 }
 .Services .carLinksItem2{
     background-color: antiquewhite;
     flex-grow: 1;
     max-width: 490px;
-    max-height: 650px;
-}
-
-.Services .card-image{
-    max-width: 500px;
     max-height: 650px;
 }

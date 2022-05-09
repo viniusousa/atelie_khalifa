@@ -1,3 +1,11 @@
-.formFooter {
-    background-color: blueviolet;
+
+.FormFooter input {
+    width: 300px;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.FormFooter .button{
+    margin-top: 10px;
+    font-size: 1.1rem;
 }

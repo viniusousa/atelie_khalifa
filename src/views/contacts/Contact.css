@@ -15,24 +15,29 @@
 .Contact .cards_contact{
     display: flex;
     justify-content: center;
-   flex-wrap: wrap;
-   margin: 50px;
+    flex-wrap: wrap;
+    margin: 50px;
     
 }
 .Contact  .contactItem{
     padding: 5px;
     justify-content: center;
+    align-items: center;
     flex-grow: 1;
 }
 .Contact  .contactItemGrow{
     text-align: center;
     padding: 5px;
     justify-content: center;
-    flex-grow: 2;
-
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 30px;
 }
 
-.Contact .mapa_temp {
-    width: 400px;
-    max-height: 600px;
+.Contact  .mapa{
+    background-color: aqua;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
 }
+

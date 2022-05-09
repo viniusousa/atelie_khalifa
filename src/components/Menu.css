@@ -8,7 +8,13 @@
     top: 0;
     width: 100%;
     align-items: center;
+    justify-content: space-around;
     background-color: #FBD19B;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    
 }
 
 .Menu a {
@@ -20,7 +26,6 @@
 
 .Menu .logo {
    padding: 10px;
-   background-color: purple;
     font-size: 3rem;
     font-family: 'Spirax', cursive;
 }

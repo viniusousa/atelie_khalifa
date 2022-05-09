@@ -4,8 +4,6 @@ import FormFooter from './form/Form'
 
 import { Instagram, Facebook, Twitter } from './svgs/Svg'
 
-//o footer ta pronto só falta agr estilizar e fazer o form funcionar , sim ele vai funcionar 
-
 export default function Footer() {
     return(
         <footer className='Footer'>
@@ -14,7 +12,7 @@ export default function Footer() {
                     <h3>Khalifa</h3>
                 </div>
                 <div>
-                    <span>4002-8922</span>
+                    <span><a href="tel: +558240028922">4002-8922</a></span>
                 </div>
                 <div>
                     Rua Inexistente 123<br/>
@@ -40,7 +38,7 @@ export default function Footer() {
                     <h3>NOSSAS REDES</h3>
                 </div>
                 <div>
-                    {Instagram} {Facebook} {Twitter}
+                    <abbr title="Por se tratar de projeto academico não há redes sociais, porém ao clicar em um link pode ver o código usado aqui. "><a href="https://github.com/viniusousa" target="_blank">{Instagram} {Facebook} {Twitter}</a></abbr>
                 </div>
             </div>
 

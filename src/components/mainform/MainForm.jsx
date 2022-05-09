@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import './MainForm.css'
+import InputMask from "react-input-mask";
+
 //adicionar a action dps vamos mandar os dados pro banco de dados aqui iremos usar o FireBase ou outro q seja mais sussa de configurar  
 // aqui temos três tipos de forms o do TCC da consultoria e do contato a renderização é condicional a partir de props (Propriedades), e o titulo também é passada por props
 
@@ -57,7 +59,10 @@ export default function MainForm(props) {
                 </div>
                 <div>
                     <label htmlFor="#">TELEFONE</label><br/>
-                    <input type="number" placeholder='Digite seu telefone...' className='Input Input2' value={telefone} onChange={(e) => setTelefone(e.target.value)} required/>
+                    <InputMask className='Input Input2' placeholder='Insira seu telefone' mask={"(99) 99999-9999"}
+                    value={telefone} onChange={(e) => setTelefone(e.target.value)} required
+                    />    
+                   
                 </div>
                 { (props.tableType === 'contact') ? (
                     <>
@@ -82,7 +87,7 @@ export default function MainForm(props) {
                     </div> ) : null
                 }     
                 <div className='buttonArea'>
-                    <input type="submit" value="ENVIAR" className='button'/>
+                    <input type="button" value="ENVIAR" className='button'/>
                 </div>
             </form>
         </div>
