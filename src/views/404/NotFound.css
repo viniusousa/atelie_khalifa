@@ -1,43 +1,58 @@
 .NotFound {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .flexNotFound {
-    background-color: aqua;
     margin: 20px;
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1440px;
 }
 
 .miaImage {
     max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
 }
 
 .cor1 {
-    background-color: purple;
     margin: 10px;
 }
 
 .cor2 {
-    background-color: rgb(113, 128, 0);
     margin: 10px;
 }
 
+.txt{
+    max-width: 600px;
+    height: 55px;
+}
+
+@media (max-width: 540px) {
+    h1 {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+}
 .cor2 .Pill{
-    border-radius: 35%;
+    border-radius: 50%;
+    margin: 7px;
+    
 }
 .cor2 .BluePill {
     background-color: blue;
+    border-color: #0000a0;
+
 }
 
 .cor2 .RedPill {
     background-color: red;
+    border-style: solid;
+    border-color: #ad0202;
 }
-
 
 .cor2 .flex-button-not-found {
     display: flex;
     justify-content: center;
-    background-color: rgb(77, 5, 17);
 }

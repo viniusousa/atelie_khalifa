@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router'
 import './NotFound.css'
 
 import mia_foto from '../../components/images/mia_khalifa.jpg'
+import mia_seria from '../../components/images/mia_seria.png'
 import matrix_view from '../../components/images/matrix_view.jpg'
 
 
-//minha ideia aqui é fazer um truque como se fosse matrix saca? 
-
 export default function NotFound(params) {
-    const [more, setMore] = useState(false)
 
+    const navigate = useNavigate()
+    const [more, setMore] = useState(false)
 
     function showMore() {
         setMore(true)
@@ -17,20 +18,21 @@ export default function NotFound(params) {
 
     function hideMore() {
         setMore(false)
+        navigate('/')
     }
     
-    console.log(more)
-
     return(
-        <div className='NotFound'>
+        <main className='NotFound'>
             <div className='flexNotFound'>
-                <div className='cor1'>
-                    <h1>404 Página não encontrada</h1>
-                    <img className='miaImage' src={mia_foto} alt="" />
-                </div>
-                <div className='cor2'>
-                    <div>
-                        <h3>{more == false ? 'Para onde ir?' : 'Escolha é apenas uma ilusão feita por aqueles que codaram aqui!'}</h3>
+                <section className='cor1'>
+                    <div className='txt'>
+                        <h1>404 Página não encontrada</h1>
+                    </div>
+                    <img className='miaImage' src={more === false ?  mia_foto : mia_seria} alt="" />
+                </section>
+                <section className='cor2'>
+                    <div className='txt'>
+                        <h2>{more === false ? 'Para onde ir?' : 'Escolha é apenas uma ilusão feita por aqueles que codaram aqui!'}</h2>
                     </div>
                     <div>
                         <div>
@@ -41,13 +43,12 @@ export default function NotFound(params) {
                                 <button className=' Pill BluePill' onClick={() => hideMore()}>Voltar para a Home</button>
                             </div>
                             <div>
-                                <button className={more == false ? 'Pill RedPill' : 'Pill BluePill'} onClick={() => showMore()}>{more == false ? 'Ver uma coisa legal' : 'Voltar para a Home'}</button>
+                                <button className={more === false ? 'Pill RedPill' : 'Pill BluePill'} onClick={() =>  more === false ? showMore() : hideMore()}>{more === false ? 'Ver uma coisa legal' : 'Voltar para a Home'}</button>
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </section>
             </div>
-        </div>
+        </main>
     )
 };
