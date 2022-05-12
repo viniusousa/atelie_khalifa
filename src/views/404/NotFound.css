@@ -1,0 +1,43 @@
+.NotFound {
+    margin-top: 100px;
+}
+
+.flexNotFound {
+    background-color: aqua;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.miaImage {
+    max-width: 100%;
+}
+
+.cor1 {
+    background-color: purple;
+    margin: 10px;
+}
+
+.cor2 {
+    background-color: rgb(113, 128, 0);
+    margin: 10px;
+}
+
+.cor2 .Pill{
+    border-radius: 35%;
+}
+.cor2 .BluePill {
+    background-color: blue;
+}
+
+.cor2 .RedPill {
+    background-color: red;
+}
+
+
+.cor2 .flex-button-not-found {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(77, 5, 17);
+}

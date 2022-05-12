@@ -36,7 +36,7 @@ export default function FormFooter() {
                     <input type="email" placeholder='Digite seu e-mail...' value={email} onChange={(e) => setEmail(e.target.value)} required/>
                 </div>
                 <div>
-                    <button className='button' type='submit'>QUERO RECEBER</button>   
+                    <button className='Button' type='submit'>QUERO RECEBER</button>   
                 </div>
             </div>
         </form>

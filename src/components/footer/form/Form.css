@@ -5,7 +5,11 @@
     margin: 10px 0px;
 }
 
-.FormFooter .button{
+.FormFooter .Button{
     margin-top: 10px;
     font-size: 1.1rem;
+    border-style: none;
+    padding:  5px;
+    border: solid 1px;
 }
+
