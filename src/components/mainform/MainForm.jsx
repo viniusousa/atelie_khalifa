@@ -2,9 +2,6 @@ import React, {useState} from 'react'
 import './MainForm.css'
 import InputMask from "react-input-mask";
 
-//adicionar a action dps vamos mandar os dados pro banco de dados aqui iremos usar o FireBase ou outro q seja mais sussa de configurar  
-// aqui temos três tipos de forms o do TCC da consultoria e do contato a renderização é condicional a partir de props (Propriedades), e o titulo também é passada por props
-
 import {db} from '../../firebase/Firebase'
 import {collection, addDoc } from 'firebase/firestore'
 
@@ -16,9 +13,6 @@ export default function MainForm(props) {
     const [assunto, setAssunto] = useState('')
     const [data, setData] = useState(new Date())
 
-    //const [file, setFile] = React.useState('') aqui é o arquivo tipo midia que acho que vamos chamar ele durante o subm do form, creio que podemos passar o mesmo id pra eles  mas o file não é controlado
-
-    //handleSubmit é uma função que recebe um evento como parâmetro, que nosso caso é quando submetemos o form.
 
     const handleSubmit = (e) => {
         e.preventDefault()

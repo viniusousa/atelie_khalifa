@@ -1,8 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore}  from "firebase/firestore";
  
-//usar o .env dps pra ocultar os dados do meu banco de dados na publicação pro github
-//o react ta fazendo diversas requisições de leitura no banco de dados, precisamos definir que ele leia só quando uma ação for alterada assim evitando requests desnecessárias na publicação.
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_API_KEY,

@@ -53,5 +53,3 @@ export default function Footer() {
         </footer>
     )
 };
-//lembrar de tirar a atualização de tela após submeter o form
-//editar o form

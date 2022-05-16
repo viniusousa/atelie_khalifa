@@ -1,11 +1,11 @@
 .Grade {
-    background-color: green;
-    height: 250vh;
+    height: 100vh;
     margin: 20px;
 }
 
+
 .Grade .imageGrade {
-    max-width: 300px;
+    width: 10%;
     position: absolute;
 }
 
@@ -19,32 +19,34 @@
     top: 35%;
     right: 50px;
 }
-.Grade .imageGrade3 {
-    left: 50%;
-    bottom: 0;
-}
+
 .Grade .imageGrade4 {
-    
+    right: 35%;
 }
 
 .Grade .imageGrade5 {
-    
+    left: 50%;
+    bottom: 0;
 }
 
 .Grade .imageGrade6 {
-    
+    right: 20%;
+    top: 35%;
 }
 
 .Grade .imageGrade7 {
-    
+    right: 80%;
+    bottom: 33%;
 }
 
 .Grade .imageGrade8 {
-    
+    bottom: 50%;
+    right: 44%;
 }
 
 .Grade .imageGrade9 {
-        
+    top: 19%;
+    left: 17%;
 }
 
 .Grade .imageGrade10 {

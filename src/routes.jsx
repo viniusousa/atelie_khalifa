@@ -7,8 +7,6 @@ import ConsultoriaTcc from './views/services/consult_tcc/ConsultoriaTcc'
 import Services from './views/services/Services'
 import NotFound from './views/404/NotFound'
 
-// aqui ficam todas as rotas do app
-// path * indica que qualquer rota fora das definidas volta pra home, poderiamos fazer uma pagina 404 NOT FOUND
 
 export default function MainRoutes() {
     return(
@@ -23,4 +21,4 @@ export default function MainRoutes() {
     )
 };
 
-//vamos tentar passar a tela do 
+

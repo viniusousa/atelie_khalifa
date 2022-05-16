@@ -5,7 +5,7 @@ import './Form.css'
 import { db } from '../../../firebase/Firebase'
 import { collection, addDoc } from 'firebase/firestore'
 
-//ja esta tudo feito aqui, enviando a coleção pro banco de dados no Firebase
+//enviando a coleção pro banco de dados no Firebase
 
 export default function FormFooter() {    
     const [nome, setNome] = useState('')

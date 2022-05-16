@@ -7,17 +7,6 @@ import consultTcc from '../../../../components/images/consult_tcc.jpg'
 import backFlipCard from '../../../../components/images/backflip.png'
 
 
-//tcc
-
-//ajustar responsividade
-
-//Estudantes de moda tem a chance de criar o design das peças e solicitar nossa ajuda ou execução de sua criação para algum trabalho específico que seja de sua necessidade
-
-// /consult_tcc
-
-
-// Orientação para TCC
-
 export default function FlipCardTcc(props) {
     const navigate = useNavigate()
     const [isFlipped, SetIsFlipped] = useState(false)

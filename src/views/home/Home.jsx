@@ -1,10 +1,10 @@
 import React from 'react'
-import Carrossel from '../../components/carrosel/Carrossel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
+
 import Footer from '../../components/footer/Footer'
 import GradeImages from '../../components/grade-images/GradeImages'
 import './Home.css'
-
-import {Carousel} from '3d-react-carousal';
 
 
 import dread_hot from '../../components/images/dread_hot.jpg'
@@ -12,7 +12,6 @@ import dread_hot from '../../components/images/dread_hot.jpg'
 import car_image1 from '../../components/images/car_image1.jpeg'
 import car_image2 from '../../components/images/car_image2.jpeg'
 import car_image3 from '../../components/images/car_image3.jpeg'
-
 
 import look_image1 from '../../components/images/look_image1.jpeg'
 import look_image2 from '../../components/images/look_image2.jpeg'
@@ -22,9 +21,16 @@ import look_image5 from '../../components/images/look_image5.jpeg'
 import look_image6 from '../../components/images/look_image6.jpeg'
 
 
-
 export default function Home() {
     const [image, setImage] = React.useState(look_image1)
+    const [largura, setLargura] = React.useState(window.innerWidth)
+
+    
+        window.addEventListener('resize', () => {
+            setLargura(window.innerWidth)
+        }, [])
+        
+    
 
     function renderLook1() {
         setImage(look_image1)
@@ -45,21 +51,11 @@ export default function Home() {
         setImage(look_image6)
     }
 
-    let slides = [
-        <img src={car_image1} alt="" />,
-        <img src={car_image2} alt="" />,
-        <img src={car_image3} alt="" />
-    ]
-
-    //renderizar a logo sobre as imagens, então a grade via ter um Z index 5 por ai
-
-
-    // a partir de 690px detela, a grade de imagens fica fixa na tela
-
 
     return(
         <div className='topHome'>
             <main className='Home'>
+                
                 <section>
                     <GradeImages/>
                 </section>
@@ -73,9 +69,17 @@ export default function Home() {
 
 
                 <section className='CarrosselHome'>
-                    <div>
-                        <Carousel slides={slides} autoplay={true}/>
-                    </div>
+                    <Carousel>
+                        <div>
+                            <img className='car_image' src={car_image1} alt="" />
+                        </div>
+                        <div>
+                            <img className='car_image' src={car_image2} alt="" />
+                        </div>
+                        <div>
+                            <img className='car_image' src={car_image3} alt="" />
+                        </div>
+                    </Carousel>
                 </section >  
 
 
@@ -85,40 +89,66 @@ export default function Home() {
                     <h2>EXPLORE AS ÚLTIMAS TENDÊNCIAS COM O NOSSOS LOOKBOOKS </h2>
                 </section>
 
+                <section className=' LookBookHome'>
 
+                    { largura >= 690 ? (
+                        <>
+                            <div className='ItemLookBook'>
+                                <div onMouseEnter={renderLook1}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2022</p>
+                                </div>
+                                <div onMouseEnter={renderLook2}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERÃ O 2022</p>
+                                </div>
+                                <div onMouseEnter={renderLook3}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2021</p>
+                                </div>
+                                <div onMouseEnter={renderLook4}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERAO 2021</p>
+                                </div>
+                                <div onMouseEnter={renderLook5}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2020</p>
+                                </div>
+                                <div onMouseEnter={renderLook6}>
+                                    <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERAO 2020</p>
+                                </div>
+                            </div>
+                            <div className='ItemLookBook'>
+                                <img className='renderLookImage' src={image} alt="" />
+                            </div>
 
-
-                <section className=' LookBookHome LoFlexLookBook'>
-
-                    <div className='ItemLookBook'>
-                        <div onMouseEnter={renderLook1}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2022</p>
-                        </div>
-                        <div onMouseEnter={renderLook2}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERÃ O 2022</p>
-                        </div>
-                        <div onMouseEnter={renderLook3}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2021</p>
-                        </div>
-                        <div onMouseEnter={renderLook4}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERAO 2021</p>
-                        </div>
-                        <div onMouseEnter={renderLook5}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO OUTONO/INVERNO 2020</p>
-                        </div>
-                        <div onMouseEnter={renderLook6}>
-                            <p className='UnderlineFItemBook'>COLEÇÃO PRIMAVERA/VERAO 2020</p>
-                        </div>
-                    </div>
-                    <div className='ItemLookBook'>
-                        <img className='renderLookImage' src={image} alt="" />
-                    </div>
+                        </>
+                    ): (
+                        <>
+                            <div className=' ItemLookBook ItemLookBook2'>
+                                <Carousel>
+                                   <div>
+                                       <img className='renderLookImage' src={look_image1} alt="" />
+                                   </div>
+                                   <div>
+                                        <img className='renderLookImage' src={look_image2} alt="" />
+                                   </div>
+                                      <div>
+                                        <img className='renderLookImage' src={look_image3} alt="" />
+                                      </div>
+                                        <div>
+                                            <img className='renderLookImage' src={look_image4} alt="" />
+                                        </div>
+                                        <div>
+                                            <img className='renderLookImage' src={look_image5} alt="" />
+                                        </div>
+                                        <div>
+                                            <img className='renderLookImage' src={look_image6} alt="" />
+                                        </div>
+                                </Carousel>
+                                
+                            </div>
+                        </>)}
 
                 </section>
 
 
                 <section className='HomeHistoria'>
-
 
                     <div className=' historiaChamada itemHomeHist'>
                         <h2>NOSSA <br /> HISTÓRIA</h2>

@@ -15,7 +15,8 @@
 
 .Services .txt {
     text-align: center;
-    width: 70%;
+    width: 90%;
+    height: 200px;
     margin: auto;
     padding: 10px;
 }
@@ -43,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: aquamarine;
 }
 
 .Services .carLinksItem{

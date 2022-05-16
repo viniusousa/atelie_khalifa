@@ -1,13 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Menu.css'
-//fazer o khalifa ficar no meio dps add  o nome da marca
+
 export default function Menu() {
     return(
         <header className='Menu'>
-            <div className='Menu-item'>
-                <Link to={'/services'}>Serviços</Link>
-                <Link to={'/contact'}>Contato</Link>          
+            <div className='Menu-item menufle'>
+                <div>
+                    <Link to={'/services'}>Serviços</Link>
+                </div>
+                <div>
+                    <Link to={'/contact'}>Contato</Link>          
+                </div>
             </div >
             <div className='logo Menu-item'>
                 <Link to={'/'} className='home_link'>Khalifa</Link>
