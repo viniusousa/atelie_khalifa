@@ -22,7 +22,6 @@ export default function MainForm(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        //aqui vamos usar o firebase para mandar os dados pro banco de dados
 
         addDoc(collection(db, props.origem ? props.origem : 'nao_classificado'), {
             name: nome,
@@ -82,12 +81,12 @@ export default function MainForm(props) {
                         </div>
                     </>) : (props.tableType === 'tcc') ?(
                     <div>
-                    <label htmlFor="#">ENVIE SUA IDÉIA</label><br/>
-                    <input type="file" name="esboco" id="esboco" accept='image/png, image/jpg, document.pdf'/>
+                    <label htmlFor="#">ENVIE SUA IDEIA</label><br/>
+                    <input type="file" name="esboco" className='inputFlie' accept='image/png, image/jpg, document.pdf'/>
                     </div> ) : null
                 }     
                 <div className='buttonArea'>
-                    <input type="button" value="ENVIAR" className='button'/>
+                    <input type="submit" value="ENVIAR" className='button'/>
                 </div>
             </form>
         </div>

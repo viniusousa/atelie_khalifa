@@ -1,26 +1,42 @@
 .Flipper {
-    max-width: 540px;
-    max-height: 600px;
 }
 
 
 .frontCard {
-    background-color: rgb(203, 148, 255);
-    max-width: 540px;
-    max-height: 650px;
+    max-width: 480px;
+    max-height: 580px;
 }
 
 .card-image {
-    min-width: 280px;
-    min-height: 280px;
-    max-width: 480px;
+    width: 100%;
     max-height: 580px;
     border-radius: 15px;
 }
 
 .backCard {
-    background-color: rgb(7, 123, 11);
-    max-width: 540px;
-    max-height: 650px;
+    position: relative;
+    max-width: 480px;
+    max-height: 580px;
+}
+
+.backCard .txtBackCard{
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+
+@media (max-width: 475px) {
+    .backCard .txtBackCard{
+        padding: 5px;
+        font-size: 1.5rem;
+        color: rebeccapurple;
+    }
+
+}
+
+
+.backCard .txtBackCard div{ 
+    text-align: center;
 }
 

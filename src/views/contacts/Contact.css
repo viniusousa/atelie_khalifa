@@ -16,28 +16,25 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 50px;
-    
 }
+
 .Contact  .contactItem{
     padding: 5px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    margin: 10px;
+    max-width: 600px;
 }
+
 .Contact  .contactItemGrow{
-    text-align: center;
     padding: 5px;
     justify-content: center;
     flex-grow: 1;
     align-items: center;
-    margin-left: 30px;
 }
 
 .Contact  .mapa{
-    background-color: aqua;
-    max-width: 700px;
-    justify-content: center;
-    align-items: center;
+    max-width: 600px;
 }
 

@@ -1,0 +1,94 @@
+.ConsultoriaTcc {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 430px) {
+    .ConsultoriaTcc {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 390px) {
+    .ConsultoriaTcc {
+        font-size: 1rem;
+    }
+}
+
+
+.ConsultoriaTcc .consult_tcc_folder{
+    width: 100%;
+    min-height: 200px;
+}
+
+.ConsultoriaTcc .titulo{
+    text-align: center;
+}
+
+.ConsultoriaTcc .txtTcc{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+
+.ConsultoriaTcc .FlexTcc{
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ConsultoriaTcc .FlexTcc .FlexTccItem{
+    max-width: 600px;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.iconConsultTcc {
+    border-style: dashed;
+    border-color: #FBD19B;
+    width: 128px;
+    height: 128px;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.containerIcons {
+    align-items: center;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (min-width: 510px) {
+    .containerIconsChild {
+        margin: 10px;
+    }
+}
+@media (max-width: 510px) {
+    .containerIconsChild {
+        margin: 1px;
+    }
+}
+
+
+@media (max-width: 355px) {
+    .iconConsultTcc {
+        border-style: dashed;
+        border-color: #FBD19B;
+        width: 72px;
+        height: 72px;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .containerIcons {
+        align-items: center;
+        display: flex;
+        padding: 5px;
+    }
+
+    .ConsultoriaTcc .FlexTcc .FlexTccItem {
+        margin: 0;
+    }
+    
+}

@@ -1,18 +1,12 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import Footer from '../../components/footer/Footer'
 import './Services.css'
-
 import services_folder from '../../components/images/services_folder.jpg'
-// import consultoria from '../../components/images/consultoria.jpg'
-// import consult_tcc from '../../components/images/consult_tcc.jpg'
 import FlipCard from './cards/consult_card/FlipCard'
 import FlipCardTcc from './cards/tcc_card/FlipCardTcc'
 
 
 //aqui vamos fazer um efeito de flip-card então pra facilitar vamos colocar os card em outra parte
-
-
 
 /*
 
@@ -28,27 +22,27 @@ import FlipCardTcc from './cards/tcc_card/FlipCardTcc'
 */
 
 export default function Services() {
-    const navigate = useNavigate()
     return(
         <div>
             <main className='Services'>
-                <section>
-                    <img src={services_folder} className='services_folder' alt="" />
-                    <div className='titulo'>
-                        <h2>SERVIÇOS</h2>
-                    </div>
-                </section>
-                
-                <section>
-                    <div className='txt'>
-                        <p>A Khalifa além de ter suas coleções próprias também contribui para o mundo da moda, prestando consultoria personalizada e também fornecendo orientações  no TCC de estudantes de moda.</p>
-                    </div>
-                </section>
+                <div>
+                    <section>
+                        <img src={services_folder} className='services_folder' alt="" />
+                        <div className='titulo'>
+                            <h2>SERVIÇOS</h2>
+                        </div>
+                        <div className='txt'>
+                            <p>A Khalifa além de ter suas coleções próprias também contribui para o mundo da moda, prestando consultoria personalizada e também fornecendo orientações  no TCC de estudantes de moda.</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                    </section>
+                </div>
                 
                 <section className='cardsLinks'>
                     <div className='carLinksItem'>
                         <FlipCard/>
-
                     </div>
                     <div className='carLinksItem'>
                         <FlipCardTcc/>

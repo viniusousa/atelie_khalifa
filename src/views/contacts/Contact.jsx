@@ -30,7 +30,9 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className='contactItem'>
-                        <MainForm tableType='contact' nome='ENTRE EM CONTATO CONOSCO' origem='contatos'/>
+                        <div>
+                            <MainForm tableType='contact' nome='ENTRE EM CONTATO CONOSCO' origem='contatos'/>   
+                        </div>
                     </div>            
                 </section>
             </main>

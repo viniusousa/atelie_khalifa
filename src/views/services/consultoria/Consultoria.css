@@ -1,0 +1,53 @@
+.Consultoria {
+    font-size: 1.5rem;
+}
+.Consultoria .titulo{
+    text-align: center;
+}
+.Consultoria .description{
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+}
+
+.Consultoria .consultoriaFolder {
+    width: 100%;
+    min-height: 200px;
+}
+
+.Consultoria .ConsultoriaFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.Consultoria .ConsultoriaFlex .ConsultoriaItem{
+    max-width: 400px;
+    flex-grow: 1;
+    margin:10px;
+
+}
+
+.Consultoria .ConsultoriaFlex .firsCardConsult {
+    display: flex;
+    align-items: center;
+}
+
+
+.dreadImage {
+    max-width: 100%;
+    border-radius: 10px;
+   
+}
+.dreadTxtContainer {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.dreadTxt {
+    padding: 20px;
+    margin: left;
+    max-width: 180px;
+}
