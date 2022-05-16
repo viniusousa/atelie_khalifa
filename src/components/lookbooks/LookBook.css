@@ -1,0 +1,22 @@
+.LookBook {
+}
+
+.FlexLookBook{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemLookBook{
+    background-color: pink;
+    flex-grow: 1;
+}
+
+.UnderlineFItemBook {
+    border-bottom-style: solid;
+}
+
+.renderLookImage{
+    max-width: 300px;
+}
