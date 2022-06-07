@@ -10,8 +10,12 @@ export default function MainForm(props) {
     const [email, setEmail] = useState('')
     const [telefone, setTelefone] = useState('')
     const [mensagem, setMensagem] = useState('')
+    const [mensagemAdd, setMensagemAdd] = useState('')
+    //const [auxMsg, setAuxMsg] = useState('')
     const [assunto, setAssunto] = useState('')
     const [data, setData] = useState(new Date())
+
+    
 
 
     const handleSubmit = (e) => {
@@ -21,7 +25,7 @@ export default function MainForm(props) {
             name: nome,
             email: email,
             telefone: telefone,
-            mensagem: mensagem,
+            mensagem: mensagemAdd ? mensagem.concat('\n comentarios add: \n', mensagemAdd): mensagem,
             assunto: assunto,
             date: data
         })
@@ -31,6 +35,7 @@ export default function MainForm(props) {
             setEmail('')
             setTelefone('')
             setMensagem('')
+            setMensagemAdd('')
             setAssunto('')
             setData(new Date())
         })
@@ -72,6 +77,10 @@ export default function MainForm(props) {
                         <div>
                                 <label htmlFor="#">MENSAGEM</label><br />
                                 <textarea name="Digite sua mensagem" id="msg" cols="30" rows="10" className='Input' value={mensagem} onChange={(e) => setMensagem(e.target.value)} required></textarea>
+                        </div>
+                        <div>
+                                <label htmlFor="#">COMENTÁRIOS ADICIONAIS</label><br />
+                                <textarea name="Digite sua mensagem" id="msg" cols="30" rows="10" className='Input' value={mensagemAdd} onChange={(e) => setMensagemAdd(e.target.value)} ></textarea>
                         </div>
                     </>) : (props.tableType === 'tcc') ?(
                     <div>
